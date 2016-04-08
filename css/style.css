@@ -1,43 +1,47 @@
 body {
 	font-family: 'Dosis', sans-serif;
-    color: #404142;
-    font-size: 16px;
+  color: #404142;
+  font-size: 16px;
 	letter-spacing: 0.8px;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 200;
 }
+
 ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
+
 a {
-	-webkit-transition: all 0.3s;
-  	-moz-transition: all 0.3s;
-  	transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
 a:hover, a:focus, a:active, a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Buttons override */
 .btn {
 	text-transform: uppercase;
-    font-weight: 600;
+  font-weight: 600;
 }
 .btn-lg {
 	padding: 15px 40px;
-    font-size: 16px;
-    line-height: none;
-    border-radius: 4px;
+  font-size: 16px;
+  line-height: none;
+  border-radius: 4px;
 }
 .btn-red {
-	background-color: #dd5138;
+	background-color: #FE4A6F;
 	color: #fff;
 }
 .btn-yellow {
-	background-color: #fcd93b;
+	background-color: #151F50;
 	color: #2a2a2a;
 	opacity: 0.8;
 }
@@ -46,10 +50,13 @@ a:hover, a:focus, a:active, a:visited {
 }
 .btn-yellow.disabled:hover,
 .btn-yellow[disabled]:hover {
-    opacity: 0.65;
+  opacity: 0.65;
 }
 .content-ct {
 	text-align: center;
+}
+.content-lt {
+  text-align: left;
 }
 
 /* ------------------
@@ -106,16 +113,113 @@ a:hover, a:focus, a:active, a:visited {
 	transform: scale(1.8);
 }
 
-
 .hero-header {
-	background: #016cc7;
-	min-height: 750px;
-	padding: 5em;
-	color: #fff;
+  min-height: 750px;
+  padding: 0;
+  color: #fff;
+}
+
+.brief {
+    margin-top: 120px;
+    color: #151F50;
+}
+
+.galata {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1280px;
+  background-image: url(../img/devopsdays-istanbul-galata-background.png);
+  background-size: 105%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  z-index: 50;
+  -webkit-transform: rotate(-1.3deg);
+  -ms-transform: rotate(-1.3deg);
+  -moz-transform: rotate(-1.3deg);
+}
+
+.space {
+  height: 650px;
+}
+
+.triangle-up-left {
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    width: 750px;
+    height: 0px;
+    border-right: 180px solid transparent;
+    border-bottom: 650px solid rgba(254, 74, 111, 0.9);
+    z-index: 25;
+    -webkit-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+}
+
+.triangle-down-left {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.triangle-down-left:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    margin-top: -100px;
+    border-top: 100px solid #fff;
+    border-left: 4000px solid #151F50;
+}
+
+
+.triangle-down-right {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.triangle-down-right:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    margin-top: -100px;
+    border-top: 60px solid #151F50;
+    border-right: 4000px solid #fff;
+}
+
+.triangle-down-left-venue {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 4000px solid transparent;
+    border-top: 50px solid #fff;
+    z-index: 25;
+}
+
+.welcome {
+  background-color: #151F50;
+  color: #fff;
+}
+
+.galata-over {
+  position: relative;
+  z-index: 75;
+  top: 0px;
+  left: 0px;
 }
 .hero-header h1 {
 	margin: 1em 0 0 0;
 }
+
 .hero-header h4 {
 	font-weight: normal;
 	opacity: 0.6;
@@ -123,7 +227,10 @@ a:hover, a:focus, a:active, a:visited {
     margin: 2em 0;
 }
 .hero-header .logo {
-	max-width: 280px;
+  position: absolute;
+  margin: 50px 0 0 35px;
+	width: 320px;
+  z-index: 101;
 }
 .hero-header .btn {
 	margin-top: 3em;
@@ -132,7 +239,7 @@ a:hover, a:focus, a:active, a:visited {
 	max-width: 100%;
 }
 .me-row {
-	padding: 30px 0;
+	padding: 30px 0 0 0;
 }
 .row-title {
 	font-weight: 400;
@@ -140,10 +247,11 @@ a:hover, a:focus, a:active, a:visited {
 .feature {
 	padding: 20px;
 	margin-top: 30px;
+  text-align: center;
 }
 .feature span {
 	font-size: 5em;
-    color: #016cc7;
+  color: #FE4A6F;
 }
 
 .speaker .feature {
@@ -184,17 +292,22 @@ a span.ti-twitter-alt {
 }
 
 .tickets {
-	background-color: #fcd93b;
+	background-color: #fff;
+  padding: 30px 30px 0 30px;
 }
 .tickets .price {
 	font-size: 4em;
-	color: #dd5138;
-    font-weight: 100;
+	color: #FE4A6F;
+  font-weight: 100;
 }
 .tickets .price sup {
 	font-size: 0.4em;
 }
 
+.eventbrite {
+  margin-top: 30px;
+
+}
 
 .nav-tabs {
     margin-top: 20px;
@@ -216,7 +329,8 @@ a span.ti-twitter-alt {
 }
 
 .speakers {
-    background-color: #fcd93b;
+  color: #fff;
+  background-color: #151F50;
 }
 
 .sponsors .gold img {
@@ -234,7 +348,7 @@ a span.ti-twitter-alt {
 
 .venue {
     min-height: 450px;
-    margin: 0px 0px;
+    margin: 0 0;
     padding: 0px 0px;
     background-color: #ccc;
     position: relative;
@@ -275,7 +389,7 @@ ul.footer-menu li {
 }
 ul.footer-menu li a {
     font-size: 12px;
-    color: #fcd93b;
+    color: #151F50;
     padding-right: 20px;
 }
 ul.footer-menu li a:hover {
@@ -374,7 +488,7 @@ ul.footer-menu li a:hover {
 }
 #schedule .timeline-wrapper .date-container .date {
   color: #fff;
-  background-color: #3b475f;
+  background-color: #151F50;
   font-family: Dosis, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -428,10 +542,10 @@ ul.footer-menu li a:hover {
   margin-top: -5px;
 }
 #schedule .timeline-wrapper .timeline-date p span {
-  color: #3b475f;
+  color: #151F50;
 }
 #schedule .timeline-wrapper .timeline-date:after {
-  background-color: #3b475f;
+  background-color: #151F50;
   content: '';
   position: absolute;
   top: 40px;
