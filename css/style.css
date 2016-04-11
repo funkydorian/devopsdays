@@ -120,7 +120,7 @@ a:hover, a:focus, a:active, a:visited {
 
 .hero-header {
   min-height: 750px;
-  padding: 0;
+  padding: 30px;
   color: #fff;
 }
 
@@ -232,9 +232,11 @@ a:hover, a:focus, a:active, a:visited {
     margin: 2em 0;
 }
 .hero-header .logo {
-  position: absolute;
+  position: relative;
   margin: 50px 0 0 35px;
-	width: 320px;
+	width: 100%;
+  min-width: 240px;
+  max-width: 360px;
   z-index: 101;
 }
 .hero-header .btn {
