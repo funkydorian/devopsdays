@@ -133,7 +133,13 @@ a:hover, a:focus, a:active, a:visited {
   text-align: left;
 }
 
-.galata {
+.gatata {
+  position: relative;
+  overflow: hidden;
+}
+
+.galata:before {
+  content: "";
   position: absolute;
   top: 0px;
   left: 0px;
