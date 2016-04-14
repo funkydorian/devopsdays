@@ -207,30 +207,60 @@ a:hover, a:focus, a:active, a:visited {
 
 .triangle-down-left-venue {
     position: absolute;
-    width: 0;
+    width: 100%;
     height: 0;
+    padding-top: 50px;
+    overflow: hidden;
+    z-index: 25;
+}
+
+.triangle-down-left-venue:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    margin-top: -50px;
     border-left: 4000px solid transparent;
     border-top: 50px solid #fff;
-    z-index: 25;
 }
 
 .triangle-down-right-venue {
     position: absolute;
     bottom: 0px;
-    width: 0;
+    width: 100%;
     height: 0;
-    border-left: 4000px solid transparent;
-    border-bottom: 50px solid #151F50;
+    padding-top: 50px;
+    overflow: hidden;
     z-index: 25;
+}
+
+.triangle-down-right-venue:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    margin-top: -50px;
+    border-left: 4000px solid transparent;
+    border-bottom: 55px solid #151F50;
 }
 
 .triangle-down-left-footer {
     position: absolute;
-    width: 0;
+    width: 100%;
     height: 0;
+    padding-top: 50px;
+    overflow: hidden;
+    z-index: 25;
+}
+
+.triangle-down-left-footer:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    margin-top: -50px;
     border-left: 4000px solid transparent;
     border-top: 50px solid #151F50;
-    z-index: 25;
 }
 
 .welcome {
@@ -418,6 +448,7 @@ a span.ti-twitter-alt {
 }
 
 .footer {
+    position: relative;
     background-color: #FE4A6F;
     color: #fff;
     padding: 0;
