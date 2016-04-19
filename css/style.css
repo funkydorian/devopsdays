@@ -407,6 +407,7 @@ a span.ti-twitter-alt {
 }
 .sponsors h2 {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .sponsors .host img {
     max-width: 300px;
@@ -424,7 +425,7 @@ a span.ti-twitter-alt {
     max-width: 210px;
 }
 .sponsors .btn {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .venue {
