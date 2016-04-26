@@ -409,20 +409,31 @@ a span.ti-twitter-alt {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+
+.sponsors img {
+  border: 1px solid #EEE;
+  padding: 10px 10px;
+}
+
+.sponsors img:hover {
+  border: 1px solid #FE4A6F;
+}
+
 .sponsors .host img {
-    max-width: 300px;
+    max-width: 320px;
 }
 .sponsors .platinum img {
-    max-width: 300px;
+    max-width: 320px;
 }
 .sponsors .gold img {
-    max-width: 270px;
+    max-width: 280px;
 }
 .sponsors .silver img {
-    max-width: 240px;
+    max-width: 220px;
 }
 .sponsors .bronze img {
-    max-width: 210px;
+    max-width: 140px;
 }
 .sponsors .btn {
     margin-top: 20px;
