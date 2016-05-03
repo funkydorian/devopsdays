@@ -335,11 +335,13 @@ a:hover, a:focus, a:active, a:visited {
 .speaker .feature {
   width: 31.333333%;
   -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    margin-right: 20px;
-    border: 3px solid #f6f6f6;
-    border-radius: 5px;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 20px;
+  border: 3px solid #f6f6f6;
+  border-radius: 5px;
+  overflow-y: auto;
+  height: 400px;
 }
 .speaker .feature:hover {
     box-shadow: 3px 3px 10px #ccc;
@@ -394,10 +396,10 @@ a span.ti-twitter-alt {
 .propose {
   color: #fff;
   background-color: #151F50;
+  display: none;
 }
 
 .speakers {
-  display: none;
   color: #fff;
   background-color: #151F50;
 }
@@ -551,6 +553,11 @@ ul.footer-menu li a:hover {
   text-align: center;
 }
 
+#schedule .block {
+  display: block;
+  margin-left: 66px;
+}
+
 #schedule .tab-pane {
   -webkit-transition: all .5s;
           transition: all .5s;
@@ -565,7 +572,7 @@ ul.footer-menu li a:hover {
   content: '';
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 117px;
   height: 100%;
   width: 2px;
 }
@@ -607,10 +614,16 @@ ul.footer-menu li a:hover {
   margin: 0 auto 50px;
   overflow: hidden;
 }
-#schedule .timeline-wrapper .timeline-date, #schedule .timeline-wrapper .timeline-info {
-  width: 50%;
-  padding: 0 40px;
+#schedule .timeline-date {
+  width: 103px;
+  padding-right: 40px;
 }
+
+#schedule .timeline-info {
+  width: 55%;
+  padding: 0 0 0 40px;
+}
+
 #schedule .timeline-wrapper .timeline-info span {
   font-family: Dosis, sans-serif;
   font-style: italic;
@@ -697,7 +710,7 @@ ul.footer-menu li a:hover {
     text-align: center;
   }
   .speaker .feature {
-      width: 100%
+      width: 100%;
   }
   .footer-credit {
       text-align: center;
