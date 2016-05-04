@@ -416,6 +416,7 @@ a span.ti-twitter-alt {
 .sponsors img {
   border: 1px solid #EEE;
   padding: 10px 10px;
+  margin-bottom: 20px;
 }
 
 .sponsors img:hover {
@@ -435,7 +436,7 @@ a span.ti-twitter-alt {
     max-width: 220px;
 }
 .sponsors .bronze img {
-    max-width: 140px;
+    max-width: 180px;
 }
 .sponsors .btn {
     margin-top: 20px;
