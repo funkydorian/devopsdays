@@ -673,6 +673,87 @@ ul.footer-menu li a:hover {
   /* stops bg color from leaking outside the border: */
   border: 3px solid #f0f1f2;
 }
+#schedule .quentin:after{
+    background-image: url(../img/quentin-adam.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+#schedule .iago:after{
+    background-image: url(../img/iago-lopez-galeiras.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+#schedule .stefano:after{
+    background-image: url(../img/stefano-rago.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+#schedule .alain:after{
+    background-image: url(../img/alain-helaili.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+#schedule .simon:after{
+    background-image: url(../img/blank-speaker.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+#schedule .serhat:after{
+    background-image: url(../img/serhat-dirik.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+#schedule .serhat:after{
+    background-image: url(../img/serhat-dirik.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+#schedule .kayra:after{
+    background-image: url(../img/kayra-otaner.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+#schedule .julien:after{
+    background-image: url(../img/julien-simon.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+#schedule .chris:after{
+    background-image: url(../img/chris-van-tuin.png);
+    background-size: 100%;
+    top: 30px!important;
+    right: -18px!important;
+    height: 36px!important;
+    width: 36px!important;
+}
+
 #schedule .inverted .timeline-date:after {
   left: -7px;
 }
