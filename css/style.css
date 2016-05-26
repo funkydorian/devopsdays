@@ -443,6 +443,9 @@ a span.ti-twitter-alt {
 .sponsors .bronze img {
     max-width: 180px;
 }
+.sponsors .media img {
+    max-width: 180px;
+}
 .sponsors .btn {
     margin-top: 20px;
 }
