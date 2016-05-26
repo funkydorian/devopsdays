@@ -347,6 +347,11 @@ a:hover, a:focus, a:active, a:visited {
     box-shadow: 3px 3px 10px #ccc;
     transform: translateY(-10px);
 }
+
+.speaker .ignite {
+  width: 23%!important;
+}
+
 .speaker-img {
   max-width: 40%;
     border: 4px solid #efefef;
@@ -794,6 +799,9 @@ ul.footer-menu li a:hover {
   .speaker .feature {
       width: 100%;
   }
+  .speaker .ignite {
+      width: 100%!important;
+  }
   .footer-credit {
       text-align: center;
       padding: 40px 20px;
@@ -832,6 +840,9 @@ ul.footer-menu li a:hover {
     width: 49%;
     margin-right: 7px;
   }
+  .speaker .ignite {
+      width: 31.333333%!important;
+  }
   ul.footer-menu {
     margin-top: 0;
   }
@@ -856,7 +867,22 @@ ul.footer-menu li a:hover {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .speaker .feature {
-        width: 49%;
+        width: 47%;
         margin-right: 9px;
+    }
+    .speaker .ignite {
+        width: 30%!important;
+    }
+}
+
+/* iPad Landscape */
+
+@media (min-width: 1200px) and (max-width: 1573px) {
+    .speaker .feature {
+        width: 31.333333%;
+        margin-right: 9px;
+    }
+    .speaker .ignite {
+        width: 23%!important;
     }
 }
